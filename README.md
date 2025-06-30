@@ -24,6 +24,12 @@ Tavily is used as the search API because it:
 - Has clean API responses that are easy to parse
 - Includes features like search depth control and result filtering
 
+## Installation
+
+```bash
+pip install langchain langgraph langchain-community tavily-python
+```
+  
 ## System Flow
 
 ```mermaid
@@ -34,9 +40,12 @@ graph TD
     C --> E[Output Answer]
     D --> E
     E --> F[End]
+```
 
+## Usage
+ - Set your Tavily API key in the script
 
-## Installation
+ - Run the application: python llm.py
+ 
+ - Enter finance-related questions when prompted
 
-```bash
-pip install langchain langgraph langchain-community tavily-python
